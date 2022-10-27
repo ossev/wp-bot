@@ -69,7 +69,12 @@ const createClient =  () => {
         authStrategy: new LocalAuth(
             {dataPath: './sessions/',
             clientId: 'bot'}),
-        puppeteer: { headless: false }
+        puppeteer: {
+            headless: false,
+            args:[
+                '--no-sandbox'
+            ]
+        }
  
     });
 }
