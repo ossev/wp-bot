@@ -1,6 +1,7 @@
 
-FROM ubuntu:18.04 as base
+# FROM ubuntu:18.04 as base
 
+FROM debian:bullseye as base
 RUN apt-get update
 
 # Install Node.js
